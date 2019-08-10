@@ -2,7 +2,7 @@ package br.com.insertionsort.sortingmethod;
 
 /**
  *
- * @author Thales Lima de Assis (T-Assis - https://github.com/T-Assis)
+ * @author Thales Lima de Assis (thales-assis - https://github.com/thales-assis)
  */
 public class InsertionSort {
 
@@ -13,19 +13,19 @@ public class InsertionSort {
 		for (int i = 1; i < vector.length; i++) {
 			
 			// Selects the first non-ordered element of the vector.
-			// Seleciona o primeiro elemento n„o ordenado do vetor.
+			// Seleciona o primeiro elemento n√£o ordenado do vetor.
 			int smallerElement = vector[i];
 			int j = i - 1;
 			
 			// Shifts all elements to the right to create the position for the unclassified element.
-			// Desloca todos os elementos para a direita para criar a posiÁ„o para o elemento n„o classificado.
+			// Desloca todos os elementos para a direita para criar a posi√ß√£o para o elemento n√£o classificado.
 			while (j >= 0 && vector[j] > smallerElement) {
 				vector[j + 1] = vector[j];
 				j--;
 			}
 			
 			// Inserts the unclassified element into its correct position.	
-			// Insere o elemento n„o classificado em sua posiÁ„o correta.
+			// Insere o elemento n√£o classificado em sua posi√ß√£o correta.
 			vector[j + 1] = smallerElement;
 		}
 
